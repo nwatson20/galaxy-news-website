@@ -1,1 +1,3 @@
-# website
+This website was completed in May 2024 for my Advanced Web Programming project. I have made minimal updates since then for the sake of quality, but my intention is for this repository to function as a public archive of my original project. The only major difference is that I have taken all functions of the site that rely on a database and hardcoded them instead. Please check the original-files folder to see how these functions were implemented when I was consistently self-hosting the database for this site.
+
+Galaxy News! is not an actual publication, although it would certainly be nice to make it a reality one day! For now, while I have no method of enforcement outside of the honor system, it would be nice if you linked back to my gitHub if you ended up using any of my photo assets. Requests for credit aside, please feel free to share, reuse, reproduce, reanimate, or plagiarize any other part of this project for personal use.
