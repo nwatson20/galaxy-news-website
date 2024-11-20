@@ -19,7 +19,7 @@ body {
   background-position: center;
 }
 
-header {
+#header {
 	padding: 30px 5% 30px 5%;
 	background-color: #e4f9b8;
 	border: 2px solid #3939ac;
@@ -98,7 +98,7 @@ header {
 	color: red;
 }
 
-footer {
+#footer {
 	padding: 30px 10%;
 	background-color: #e4f9b8;
 }
