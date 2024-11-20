@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<meta name="description" content="Advanced Web Programming assignment #2">
+		<meta name="author" content="Nanesko Watson">
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+		<script type='text/javascript'>
+        $.get('includes/header.html',function(response){ 
+            $('#header').html(response); 
+        });
+
+		$.get('includes/footer.html',function(response){ 
+            $('#footer').html(response);
+        });
+        </script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="container">
+			<div class="page pYC">
+				<div class="pageItem">
+					<h1>Galaxy News</h1><hr>
+					<p>A bi-monthly science publication for curious kids</p>
+					<a class="btnLink" href="publication.php">Read now!</a>
+				</div>
+				<div class="pageItem">
+					<img src="images/GNews_logo.png" id="logoLarge">
+				</div>
+			</div>
+			
+			<div class="page pYW">
+				<div class="pageItem title">
+					<h2>Meet Athena the Anjouan Scops-Owl!</h2>
+				</div>
+				<div class="pageItem first">
+					<img src="images/athena.png" width="60%">
+				</div>
+				<div class="pageItem">
+					<p>Athena is here to solve the mysteries of the world! She's a very curious girl whose dream is to learn everything there is to learn and document it all in her trusty notebook. She hopes that she can inspire others to learn about the world, too! Her favorite subjects are space and biology, but she loves learing about other things, too. If you have a fun fact, click <a href="contact.php">here</a> to tell her all about it!</p>
+					<p>The Anjouan-Scops Owl, or <i>Otus capnodes</i>, is an endangered species of owl. That means that there aren't a lot of them left in the world, and scientists are worried that the species will go extinct if we don't take steps to protect them. There are lots of ways to help! You can start by checking out this great article by the Endangered Species Coalition called <a href="https://www.endangered.org/15-ways-to-help-protect-endangered-species/">"15 Ways to help Protect Endangered Species"</a>.</p>
+				</div>
+			</div>
+			
+			<div class="page pB">
+				<div class="pageItem green">
+					<h4>Mailing List</h4>
+					<p>Sign up for our mailing list to stay up-to-date on our publication and events! We may also send you some fun facts, activities, and fun resources we find that help kids get into STEAM careers.</p> 
+					<p>If you don't have an email address and you're 13 or older, you can make one yourself. If you're younger than 13, you can ask your parent's permission to make a new email account that both of you can look at, so you don't have to miss out on any Galaxy News fun!</p>
+				</div>
+				<div class="pageItem">
+					<h4>Our publication, the Galaxy News magazine, seeks to synthesize scientific research, creative writing, and illustration to show kids that science can be fun, artistic, beautiful, and inspiring.</h4>
+					<p>The combination of science, technology, and art, is called STEAM: Standing for science, technology, engineering, art, and mathematics. You may think that art doesn't fit in to those things, but in reality, they couldn't be more related. Check out one of <a href="publication.php">our latest Galaxy News issues</a> (for free!) to see how creative fields like art and writing can work alongside scientific ones!</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
