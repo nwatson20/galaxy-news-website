@@ -1,15 +1,15 @@
 <html>
 	<head>
 		<title>Form</title>
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="../css/styles.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
 		<script type='text/javascript'>
-        $.get('includes/header.html',function(response){ 
+        $.get('../includes/header.html',function(response){ 
             $('#header').html(response); 
         });
 
-		$.get('includes/footer.html',function(response){ 
+		$.get('../includes/footer.html',function(response){ 
             $('#footer').html(response);
         });
         </script>
@@ -20,7 +20,7 @@
 			<div class="page pB">
 				<div class="pageItem">
 					<h2>Log In</h2>
-					<p>Don't have an account yet? <a href="html/signup.html">Sign up here!</a></p>
+					<p>Don't have an account yet? <a href="signup.html">Sign up here!</a></p>
 				</div>
 				<div class="pageItem blue">
 					
@@ -37,7 +37,7 @@
 					?> -->
 
 					<!-- Hardcode login response -->
-					<form name="login" action="includes/login.inc.php" method="post">
+					<form name="login" action="..includes/login.inc.php" method="post">
 						<label for="username">Username: </label><br>
 						<input type="text" name="username"/><br>
 						<label for="password">Password: </label><br>

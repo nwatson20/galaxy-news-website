@@ -2,16 +2,16 @@
 	<head>
 		<meta name="description" content="newsfeed">
 		<meta name="author" content="Nanesko Watson">
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="../css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
 		<script type='text/javascript'>
-        $.get('includes/header.html',function(response){ 
+        $.get('../includes/header.html',function(response){ 
             $('#header').html(response); 
         });
 
-		$.get('includes/footer.html',function(response){ 
+		$.get('../includes/footer.html',function(response){ 
             $('#footer').html(response);
         });
         </script>
