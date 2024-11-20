@@ -4,9 +4,20 @@
 		<meta name="author" content="Nanesko Watson">
 		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+		<script type='text/javascript'>
+        $.get('includes/header.html',function(response){ 
+            $('#header').html(response); 
+        });
+
+		$.get('includes/footer.html',function(response){ 
+            $('#footer').html(response);
+        });
+        </script>
 	</head>
 	<body>
-	<?php include('C:\xampp\htdocs\project\header.php'); ?>
+		<div id="header"></div>
 		<h1>Shop</h1>
 		
 		<h4>Buy a physical copy of a previous issue!</h4>
@@ -31,9 +42,9 @@
 				<p>Sticker Sheet</p>
 			</div>
 			<div class="listingItem">
-				<p>Notebook</p>
+				<p>Button</p>
 			</div>
 		</div>
-	<?php include('C:\xampp\htdocs\project\footer.php'); ?>
+		<div id="footer"></div>
 	</body>
 </html>

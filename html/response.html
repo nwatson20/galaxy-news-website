@@ -1,14 +1,21 @@
-<?php
-	include_once 'includes/connect.php';
-?>
-
 <html>
 	<head>
 		<title>Response</title>
 		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+		<script type='text/javascript'>
+        $.get('includes/header.html',function(response){ 
+            $('#header').html(response); 
+        });
+
+		$.get('includes/footer.html',function(response){ 
+            $('#footer').html(response);
+        });
+        </script>
 	</head>
 	<body>
-	<?php include('header.php'); ?>
+		<div id="header"></div>
 		<div class="container">
 			<div class="page pYW">
 				<div class="pageItem">
@@ -36,6 +43,6 @@
 				</div>
 			</div>
 		</div>
-	<?php include('footer.php'); ?>
+		<div id="footer"></div>
 	</body>
 </html>
